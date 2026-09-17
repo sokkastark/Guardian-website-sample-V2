@@ -180,8 +180,11 @@ export default function PlatformPage() {
                   <span>GUARDIAN POPULATION HEALTH PLATFORM</span>
                 </div>
 
-                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.12] mb-6">
-                  One connected view <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-white to-[#ff7a57]">of healthcare.</span>
+                <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-white leading-[1.14] mb-6">
+                  <span className="block text-white">One connected view</span>
+                  <span className="block mt-1 text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-white to-[#ff7a57]">
+                    of healthcare.
+                  </span>
                 </h1>
 
                 <p className="text-base sm:text-xl text-purple-100/90 leading-relaxed max-w-2xl mb-10 font-normal">

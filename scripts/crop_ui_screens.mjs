@@ -15,7 +15,7 @@ const crops = [
   {
     name: 'ui-dashboard-main.png',
     page: 'page-1.png',
-    crop: { left: 860, top: 400, width: 920, height: 580 }
+    crop: { left: 918, top: 422, width: 774, height: 456 }
   },
   // Page 2
   {
