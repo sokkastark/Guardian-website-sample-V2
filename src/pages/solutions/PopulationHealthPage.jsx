@@ -31,7 +31,7 @@ export default function PopulationHealthPage() {
       category="Solutions"
       categoryPath="/solutions"
       title="Population Health"
-      eyebrow="POPULATION HEALTH"
+      eyebrow="POWERED BY GUARDIAN CAMPAIGNS & CMC MODULES // POPULATION HEALTH"
       headline="See the bigger picture across your population."
       supporting="Guardian connects healthcare information across patients and populations to help organizations understand risk, identify care opportunities, prioritize action, and support better-informed population health decisions."
       ctaText="Explore Population Health"

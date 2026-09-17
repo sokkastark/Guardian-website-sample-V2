@@ -31,7 +31,7 @@ export default function QualityPerformancePage() {
       category="Solutions"
       categoryPath="/solutions"
       title="Quality & Performance"
-      eyebrow="QUALITY & PERFORMANCE"
+      eyebrow="POWERED BY GUARDIAN QUALITY MANAGER MODULE // QUALITY & PERFORMANCE"
       headline="See where performance can improve."
       supporting="Guardian connects healthcare data and clinical information to help organizations identify quality opportunities, understand performance, and support action across their healthcare workflows."
       ctaText="Explore Quality & Performance"

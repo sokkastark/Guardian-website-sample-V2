@@ -31,7 +31,7 @@ export default function RiskAdjustmentPage() {
       category="Solutions"
       categoryPath="/solutions"
       title="Risk Adjustment"
-      eyebrow="RISK ADJUSTMENT"
+      eyebrow="POWERED BY GUARDIAN MRA MODULE // RISK ADJUSTMENT"
       headline="Turn patient data into a clearer view of risk."
       supporting="Guardian brings together relevant patient information to help healthcare organizations identify risk opportunities, support documentation and coding workflows, and improve visibility across their populations."
       ctaText="Explore Risk Adjustment"

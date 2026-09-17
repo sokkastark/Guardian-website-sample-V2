@@ -18,6 +18,7 @@ export default function SolutionsSection() {
     {
       id: 'pop-health',
       title: 'Population Health',
+      moduleName: 'Campaigns & CMC Modules',
       angle: -90, // Top
       color: '#a855f7',
       icon: HeartPulse,
@@ -26,6 +27,7 @@ export default function SolutionsSection() {
     {
       id: 'care-mgmt',
       title: 'Care Management',
+      moduleName: 'ADT & Referral Manager',
       angle: -30, // Top Right
       color: '#10b981',
       icon: ClipboardList,
@@ -34,6 +36,7 @@ export default function SolutionsSection() {
     {
       id: 'risk-adj',
       title: 'Risk Adjustment',
+      moduleName: 'MRA Module',
       angle: 30, // Bottom Right
       color: '#06b6d4',
       icon: ShieldAlert,
@@ -42,6 +45,7 @@ export default function SolutionsSection() {
     {
       id: 'quality',
       title: 'Quality & Performance',
+      moduleName: 'Quality Manager Module',
       angle: 90, // Bottom
       color: '#f97316',
       icon: Award,
@@ -50,6 +54,7 @@ export default function SolutionsSection() {
     {
       id: 'engagement',
       title: 'Patient Engagement',
+      moduleName: 'Telemedicine Platform',
       angle: 150, // Bottom Left
       color: '#3b82f6',
       icon: MessageSquareHeart,
@@ -58,6 +63,7 @@ export default function SolutionsSection() {
     {
       id: 'analytics',
       title: 'Analytics & Intelligence',
+      moduleName: 'Analytics Hub',
       angle: 210, // Top Left
       color: '#8b5cf6',
       icon: BarChart3,
@@ -120,11 +126,16 @@ export default function SolutionsSection() {
               </a>
             </div>
 
-            {/* Active Satellite Summary Drawer */}
+            {/* Active Satellite Summary Drawer with Original Product Module Label */}
             <div className="mt-8 p-4 rounded-2xl bg-[#faf8fd] border border-[#ede7f6] text-xs text-[#524b6b]">
-              <div className="flex items-center gap-2 font-bold text-[#1c1636] mb-1">
-                <span className="w-2 h-2 rounded-full" style={{ backgroundColor: satellites[activeNode].color }} />
-                <span>{satellites[activeNode].title}</span>
+              <div className="flex items-center justify-between mb-1.5">
+                <div className="flex items-center gap-2 font-bold text-[#1c1636]">
+                  <span className="w-2 h-2 rounded-full" style={{ backgroundColor: satellites[activeNode].color }} />
+                  <span>{satellites[activeNode].title}</span>
+                </div>
+                <span className="text-[10px] font-mono font-medium px-2 py-0.5 rounded-full bg-[#7b3fc7]/10 text-[#7b3fc7] border border-[#7b3fc7]/20">
+                  {satellites[activeNode].moduleName}
+                </span>
               </div>
               <p>{satellites[activeNode].desc}</p>
             </div>

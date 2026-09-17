@@ -32,7 +32,7 @@ export default function PatientIntelligencePage() {
       category="Platform"
       categoryPath="/platform"
       title="Patient Intelligence"
-      eyebrow="PATIENT INTELLIGENCE"
+      eyebrow="POWERED BY GUARDIAN PATIENT 360° MASTER CHART // PATIENT INTELLIGENCE"
       headline="Create the complete patient picture."
       supporting="Guardian brings healthcare information together into a connected patient view, helping teams understand the patient, identify opportunities, and support the next action."
       ctaText="Explore Patient Intelligence"

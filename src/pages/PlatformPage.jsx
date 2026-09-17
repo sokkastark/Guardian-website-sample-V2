@@ -294,6 +294,165 @@ export default function PlatformPage() {
       </section>
 
       {/* ─────────────────────────────────────────────────────────────
+          SECTION: OFFICIAL GUARDIAN PRODUCT PROFILE MODULES
+          Explicitly highlights all 11 original product modules
+          ───────────────────────────────────────────────────────────── */}
+      <section className="py-20 sm:py-24 bg-[#120b24] text-white border-b border-white/10 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-purple-200 text-xs font-semibold tracking-wider uppercase mb-4">
+              <Layers className="w-3.5 h-3.5 text-[#ff7a57]" />
+              <span>GUARDIAN PRODUCT PROFILE // APPLICATION MODULES</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4">
+              11 Core Application Modules. One Unified Platform.
+            </h2>
+            <p className="text-base sm:text-lg text-purple-200/90 leading-relaxed">
+              Built directly on Guardian’s official Product Profile architecture, combining Value-Based Care, Clinically Integrated Network (CIN) workflows, and Patient 360 intelligence into a seamless user experience.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Category 1: Value Based Care (VBC) Modules */}
+            <div className="p-7 rounded-2xl bg-white/5 border border-white/15 backdrop-blur-md hover:border-[#7b3fc7]/60 transition-all">
+              <div className="flex items-center justify-between mb-6 pb-4 border-b border-white/10">
+                <h3 className="text-lg font-bold text-white flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#7b3fc7]" />
+                  Value Based Care (VBC) Modules
+                </h3>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#7b3fc7]/30 text-purple-200 border border-[#7b3fc7]/40">
+                  5 Modules
+                </span>
+              </div>
+              <ul className="space-y-3.5">
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-4 h-4 text-[#ff7a57] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-white text-sm block">Quality Manager</span>
+                    <span className="text-xs text-purple-200/70">Quality Measures Tracker & HEDIS Performance</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-4 h-4 text-[#ff7a57] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-white text-sm block">MRA Module</span>
+                    <span className="text-xs text-purple-200/70">Risk Stratification Process & Condition Recapture</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-4 h-4 text-[#ff7a57] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-white text-sm block">Analytics Hub</span>
+                    <span className="text-xs text-purple-200/70">Value-Based Reporting Hub & Contract Analytics</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-4 h-4 text-[#ff7a57] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-white text-sm block">ADT Module</span>
+                    <span className="text-xs text-purple-200/70">Admission, Discharge, Transfer Notifications</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-4 h-4 text-[#ff7a57] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-white text-sm block">My Patients</span>
+                    <span className="text-xs text-purple-200/70">Care Population & Cohort Panel Management</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* Category 2: CIN Modules & Tools */}
+            <div className="p-7 rounded-2xl bg-white/5 border border-white/15 backdrop-blur-md hover:border-[#ff7a57]/60 transition-all">
+              <div className="flex items-center justify-between mb-6 pb-4 border-b border-white/10">
+                <h3 className="text-lg font-bold text-white flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#ff7a57]" />
+                  CIN Modules & Tools
+                </h3>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#ff7a57]/30 text-purple-200 border border-[#ff7a57]/40">
+                  5 Modules
+                </span>
+              </div>
+              <ul className="space-y-3.5">
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-4 h-4 text-[#ff7a57] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-white text-sm block">Referral Manager</span>
+                    <span className="text-xs text-purple-200/70">Specialist Referral Workflow & Tracking</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-4 h-4 text-[#ff7a57] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-white text-sm block">Telemedicine Platform</span>
+                    <span className="text-xs text-purple-200/70">Real-Time Virtual Care & Consultation Engine</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-4 h-4 text-[#ff7a57] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-white text-sm block">Campaigns Manager</span>
+                    <span className="text-xs text-purple-200/70">Population Health Outreach & Patient Campaigns</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-4 h-4 text-[#ff7a57] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-white text-sm block">Encounters Module</span>
+                    <span className="text-xs text-purple-200/70">Patient Interaction Tracking & Clinical Logs</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-4 h-4 text-[#ff7a57] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-white text-sm block">CMC Module</span>
+                    <span className="text-xs text-purple-200/70">Cardiometabolic Care Pathways & Management</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* Category 3: Administration, Support & Intelligence */}
+            <div className="p-7 rounded-2xl bg-white/5 border border-white/15 backdrop-blur-md hover:border-[#10b981]/60 transition-all">
+              <div className="flex items-center justify-between mb-6 pb-4 border-b border-white/10">
+                <h3 className="text-lg font-bold text-white flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#10b981]" />
+                  Support & Intelligence
+                </h3>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#10b981]/30 text-purple-200 border border-[#10b981]/40">
+                  3 Modules
+                </span>
+              </div>
+              <ul className="space-y-3.5">
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-4 h-4 text-[#ff7a57] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-white text-sm block">Patient 360° Chart</span>
+                    <span className="text-xs text-purple-200/70">Master Patient Index across 13 Integrated Domains</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-4 h-4 text-[#ff7a57] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-white text-sm block">Document Hub</span>
+                    <span className="text-xs text-purple-200/70">Document Management Workflow & Records</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-4 h-4 text-[#ff7a57] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-white text-sm block">Library</span>
+                    <span className="text-xs text-purple-200/70">Knowledge Access Portal & Clinical Protocols</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─────────────────────────────────────────────────────────────
           SECTION 3: THE GUARDIAN PLATFORM JOURNEY
           ───────────────────────────────────────────────────────────── */}
       <section id="journey" className="py-20 sm:py-28 bg-white border-b border-[#e1e1e5]">

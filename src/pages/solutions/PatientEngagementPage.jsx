@@ -31,7 +31,7 @@ export default function PatientEngagementPage() {
       category="Solutions"
       categoryPath="/solutions"
       title="Patient Engagement"
-      eyebrow="PATIENT ENGAGEMENT"
+      eyebrow="POWERED BY GUARDIAN TELEMEDICINE MODULE // PATIENT ENGAGEMENT"
       headline="Connect patients to the next step in their care."
       supporting="Guardian combines patient information, healthcare workflows, and engagement capabilities to help organizations support meaningful interactions throughout the care journey."
       ctaText="Explore Patient Engagement"

@@ -31,7 +31,7 @@ export default function AnalyticsIntelligencePage() {
       category="Solutions"
       categoryPath="/solutions"
       title="Analytics & Intelligence"
-      eyebrow="ANALYTICS & INTELLIGENCE"
+      eyebrow="POWERED BY GUARDIAN ANALYTICS MODULE // ANALYTICS & INTELLIGENCE"
       headline="Turn healthcare data into decisions."
       supporting="Guardian transforms connected healthcare data into meaningful clinical and operational intelligence, helping organizations understand what is happening, identify opportunities, and decide what to do next."
       ctaText="Explore Analytics & Intelligence"

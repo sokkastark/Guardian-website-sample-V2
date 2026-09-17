@@ -32,7 +32,7 @@ export default function CareManagementPage() {
       category="Solutions"
       categoryPath="/solutions"
       title="Care Management"
-      eyebrow="CARE MANAGEMENT"
+      eyebrow="POWERED BY GUARDIAN ADT & REFERRAL MANAGER MODULES // CARE MANAGEMENT"
       headline="Turn patient insight into coordinated care."
       supporting="Guardian brings patient information, clinical context, care opportunities, and workflows together to help care teams understand what patients need and support the next step."
       ctaText="Explore Care Management"
