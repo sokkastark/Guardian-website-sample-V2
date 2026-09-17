@@ -370,8 +370,8 @@ export default function PlatformPage() {
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div className="lg:col-span-5">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-purple-200 text-xs font-semibold tracking-wider uppercase mb-4 border border-white/15">
                 <UserCheck className="w-3.5 h-3.5 text-[#ff7a57]" />
                 <span>PATIENT INTELLIGENCE</span>
@@ -390,26 +390,27 @@ export default function PlatformPage() {
               </div>
             </div>
 
-            <div className="lg:col-span-6">
-              <div className="relative rounded-2xl bg-white/5 border border-white/20 backdrop-blur-xl p-3 shadow-2xl overflow-hidden group">
-                <div className="flex items-center justify-between pb-3 border-b border-white/10 mb-3 px-1">
+            <div className="lg:col-span-7">
+              <div className="relative rounded-2xl bg-[#1a1233] border border-white/20 shadow-[0_24px_60px_rgba(0,0,0,0.5)] p-2.5 overflow-hidden group transform lg:scale-105 origin-left sm:origin-center transition-transform duration-300">
+                <div className="flex items-center justify-between px-3 py-2 bg-[#120b24] rounded-t-xl border-b border-white/10 mb-2">
                   <div className="flex items-center gap-2">
-                    <span className="w-2.5 h-2.5 rounded-full bg-red-400 inline-block" />
-                    <span className="w-2.5 h-2.5 rounded-full bg-yellow-400 inline-block" />
-                    <span className="w-2.5 h-2.5 rounded-full bg-green-400 inline-block" />
-                    <span className="text-xs font-bold text-white ml-2">Patient Master Chart (Patient 360°)</span>
+                    <span className="w-3 h-3 rounded-full bg-red-500/80 inline-block" />
+                    <span className="w-3 h-3 rounded-full bg-yellow-500/80 inline-block" />
+                    <span className="w-3 h-3 rounded-full bg-green-500/80 inline-block" />
+                    <span className="text-[11px] text-purple-300 font-mono ml-2">app.itsguardian.com / patient-360</span>
                   </div>
-                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-mono">
+                  <span className="text-[10px] px-2 py-0.5 rounded bg-[#7b3fc7]/40 text-purple-200 border border-[#7b3fc7]/60">
                     13 Integrated Domains
                   </span>
                 </div>
 
-                <div className="rounded-xl overflow-hidden border border-white/10 shadow-lg bg-black/40">
+                <div className="relative rounded-lg overflow-hidden bg-black">
                   <img 
                     src="/images/product-ui/ui-patient-360.png" 
                     alt="Guardian Patient Master Chart 360° View" 
-                    className="w-full h-auto object-cover filter brightness-105"
+                    className="w-full h-auto object-cover rounded-lg shadow-inner filter brightness-105 contrast-105"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#120b24]/40 via-transparent to-transparent opacity-60 pointer-events-none" />
                 </div>
 
                 <div className="mt-3 grid grid-cols-3 sm:grid-cols-4 gap-1.5 text-[10px] font-mono text-purple-200/90 text-center">
