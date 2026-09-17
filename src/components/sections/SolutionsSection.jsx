@@ -18,7 +18,7 @@ export default function SolutionsSection() {
     {
       id: 'pop-health',
       title: 'Population Health',
-      moduleName: 'Campaigns & CMC Modules',
+      moduleName: 'CMC (Cardiometabolic Care)',
       angle: -90, // Top
       color: '#a855f7',
       icon: HeartPulse,
