@@ -119,7 +119,7 @@ export default function ChildPageLayout({
                       <span className="w-3 h-3 rounded-full bg-red-500/80 inline-block" />
                       <span className="w-3 h-3 rounded-full bg-yellow-500/80 inline-block" />
                       <span className="w-3 h-3 rounded-full bg-green-500/80 inline-block" />
-                      <span className="text-[11px] text-purple-300 font-mono ml-2">app.itsguardian.com / dashboard</span>
+                      <span className="text-[11px] text-purple-300 font-mono ml-2">live.itsguardian.com / dashboard</span>
                     </div>
                     <span className="text-[10px] px-2 py-0.5 rounded bg-[#7b3fc7]/40 text-purple-200 border border-[#7b3fc7]/60">
                       Live Environment
