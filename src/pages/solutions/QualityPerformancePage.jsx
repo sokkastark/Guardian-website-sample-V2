@@ -31,7 +31,7 @@ export default function QualityPerformancePage() {
       category="Solutions"
       categoryPath="/solutions"
       title="Quality & Performance"
-      eyebrow="POWERED BY GUARDIAN QUALITY MANAGER MODULE // QUALITY & PERFORMANCE"
+      eyebrow="QUALITY MANAGER"
       headline="See where performance can improve."
       supporting="Guardian connects healthcare data and clinical information to help organizations identify quality opportunities, understand performance, and support action across their healthcare workflows."
       ctaText="Explore Quality & Performance"
@@ -43,6 +43,7 @@ export default function QualityPerformancePage() {
       capabilitiesSubtitle="What Guardian helps healthcare organizations achieve in quality performance"
       heroVisualBadge="CMS MIPS Certified Registry"
       heroImage="/images/product-ui/ui-quality-manager.png"
+      mockupUrl="Quality-Manager"
       contextType="quality-performance"
       siblings={siblings}
       closingHeadline="Turn quality insights into action."

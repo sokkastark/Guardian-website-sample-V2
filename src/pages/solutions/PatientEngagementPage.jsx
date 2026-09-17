@@ -31,7 +31,7 @@ export default function PatientEngagementPage() {
       category="Solutions"
       categoryPath="/solutions"
       title="Patient Engagement"
-      eyebrow="POWERED BY GUARDIAN TELEMEDICINE MODULE // PATIENT ENGAGEMENT"
+      eyebrow="TELEMEDICINE & ENGAGEMENT"
       headline="Connect patients to the next step in their care."
       supporting="Guardian combines patient information, healthcare workflows, and engagement capabilities to help organizations support meaningful interactions throughout the care journey."
       ctaText="Explore Patient Engagement"
@@ -41,9 +41,10 @@ export default function PatientEngagementPage() {
       capabilities={capabilities}
       capabilitiesTitle="Key Capabilities"
       capabilitiesSubtitle="What Guardian helps healthcare teams achieve in patient engagement"
-      heroVisualBadge="1-Click Telemedicine & Campaigns"
+      heroVisualBadge="Real-Time Video Consultations"
       heroImage="/images/product-ui/ui-telemedicine.png"
-      contextType="care-management"
+      mockupUrl="Telemedicine"
+      contextType="patient-engagement"
       siblings={siblings}
       closingHeadline="Turn patient information into meaningful action."
       closingText="Patient engagement becomes more effective when the right information reaches the right people at the right point in the care journey."

@@ -31,7 +31,7 @@ export default function PopulationHealthPage() {
       category="Solutions"
       categoryPath="/solutions"
       title="Population Health"
-      eyebrow="POWERED BY GUARDIAN CAMPAIGNS & CMC MODULES // POPULATION HEALTH"
+      eyebrow="CMC & CAMPAIGNS"
       headline="See the bigger picture across your population."
       supporting="Guardian connects healthcare information across patients and populations to help organizations understand risk, identify care opportunities, prioritize action, and support better-informed population health decisions."
       ctaText="Explore Population Health"
@@ -40,9 +40,10 @@ export default function PopulationHealthPage() {
       journeySubtitle="How Guardian connects population information with healthcare action"
       capabilities={capabilities}
       capabilitiesTitle="Key Capabilities"
-      capabilitiesSubtitle="What Guardian helps healthcare organizations achieve across populations"
-      heroVisualBadge="Cardiometabolic & RPM Intelligence"
+      capabilitiesSubtitle="What Guardian helps healthcare organizations achieve in population health"
+      heroVisualBadge="Cardiometabolic & Chronic Care"
       heroImage="/images/product-ui/ui-cardiometabolic-care.png"
+      mockupUrl="CMC"
       contextType="population-health"
       siblings={siblings}
       closingHeadline="Turn population data into focused action."

@@ -31,7 +31,7 @@ export default function AnalyticsIntelligencePage() {
       category="Solutions"
       categoryPath="/solutions"
       title="Analytics & Intelligence"
-      eyebrow="POWERED BY GUARDIAN ANALYTICS MODULE // ANALYTICS & INTELLIGENCE"
+      eyebrow="ANALYTICS HUB"
       headline="Turn healthcare data into decisions."
       supporting="Guardian transforms connected healthcare data into meaningful clinical and operational intelligence, helping organizations understand what is happening, identify opportunities, and decide what to do next."
       ctaText="Explore Analytics & Intelligence"
@@ -40,10 +40,11 @@ export default function AnalyticsIntelligencePage() {
       journeySubtitle="How Guardian transforms raw healthcare data into operational and clinical action"
       capabilities={capabilities}
       capabilitiesTitle="Key Capabilities"
-      capabilitiesSubtitle="What Guardian helps healthcare organizations achieve through connected intelligence"
-      heroVisualBadge="Executive Cockpits & PMPM Analytics"
+      capabilitiesSubtitle="What Guardian helps healthcare organizations achieve with analytics"
+      heroVisualBadge="Executive Cockpits & Cost Tracking"
       heroImage="/images/product-ui/ui-pop-health-analytics.png"
-      contextType="population-health"
+      mockupUrl="Analytics"
+      contextType="analytics-intelligence"
       siblings={siblings}
       closingHeadline="Turn healthcare data into actionable intelligence."
       closingText="Guardian connects analytics with healthcare workflows and expertise so information can move from a report or dashboard into a meaningful decision."

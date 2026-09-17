@@ -31,7 +31,7 @@ export default function RiskAdjustmentPage() {
       category="Solutions"
       categoryPath="/solutions"
       title="Risk Adjustment"
-      eyebrow="POWERED BY GUARDIAN MRA MODULE // RISK ADJUSTMENT"
+      eyebrow="MRA MODULE"
       headline="Turn patient data into a clearer view of risk."
       supporting="Guardian brings together relevant patient information to help healthcare organizations identify risk opportunities, support documentation and coding workflows, and improve visibility across their populations."
       ctaText="Explore Risk Adjustment"
@@ -43,6 +43,7 @@ export default function RiskAdjustmentPage() {
       capabilitiesSubtitle="What Guardian helps healthcare teams achieve in risk adjustment"
       heroVisualBadge="CMS HCC V24 & V28 Dual Engine"
       heroImage="/images/product-ui/ui-risk-stratification.png"
+      mockupUrl="MRA"
       contextType="risk-adjustment"
       siblings={siblings}
       closingHeadline="Turn risk data into informed action."

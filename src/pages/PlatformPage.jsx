@@ -421,15 +421,22 @@ export default function PlatformPage() {
                   Support & Intelligence
                 </h3>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#10b981]/30 text-purple-200 border border-[#10b981]/40">
-                  3 Modules
+                  4 Modules
                 </span>
               </div>
               <ul className="space-y-3.5">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-4 h-4 text-[#ff7a57] shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold text-white text-sm block">Patient 360° Chart</span>
-                    <span className="text-xs text-purple-200/70">Master Patient Index across 13 Integrated Domains</span>
+                    <span className="font-semibold text-white text-sm block">Patient 360°</span>
+                    <span className="text-xs text-purple-200/70">Real-Time Clinical Intelligence & Care Gap Cockpit</span>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="w-4 h-4 text-[#ff7a57] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-white text-sm block">Patient Master Chart (PMC)</span>
+                    <span className="text-xs text-purple-200/70">Longitudinal Clinical Records across 13 Domains</span>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -533,19 +540,19 @@ export default function PlatformPage() {
             <div className="lg:col-span-5">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 text-purple-200 text-xs font-semibold tracking-wider uppercase mb-4 border border-white/15">
                 <UserCheck className="w-3.5 h-3.5 text-[#ff7a57]" />
-                <span>PATIENT INTELLIGENCE</span>
+                <span>PATIENT 360° & PATIENT MASTER CHART</span>
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight mb-6">
-                Create the complete patient picture.
+                Complete patient context with PMC & Patient 360°.
               </h2>
 
               <p className="text-base sm:text-lg text-purple-100/90 leading-relaxed mb-6">
-                Guardian’s Patient Master Chart brings patient information together across the healthcare continuum, providing a dynamic view that can be updated as new information becomes available.
+                Guardian unifies patient data through two complementary pillars: the <strong>Patient Master Chart (PMC)</strong> as the longitudinal clinical repository across 13 domains, and <strong>Patient 360°</strong> as the dynamic, real-time intelligence cockpit for point-of-care action.
               </p>
 
               <div className="p-4 rounded-xl bg-white/10 border border-white/15 text-sm font-medium text-white mb-6">
-                One patient. One connected view. More context for action.
+                PMC: Longitudinal Clinical Records • Patient 360°: Real-Time Intelligence
               </div>
             </div>
 
@@ -556,7 +563,7 @@ export default function PlatformPage() {
                     <span className="w-3 h-3 rounded-full bg-red-500/80 inline-block" />
                     <span className="w-3 h-3 rounded-full bg-yellow-500/80 inline-block" />
                     <span className="w-3 h-3 rounded-full bg-green-500/80 inline-block" />
-                    <span className="text-[11px] text-purple-300 font-mono ml-2">live.itsguardian.com / patient-360</span>
+                    <span className="text-[11px] text-purple-300 font-mono ml-2">live.itsguardian.com / PMC</span>
                   </div>
                   <span className="text-[10px] px-2 py-0.5 rounded bg-[#7b3fc7]/40 text-purple-200 border border-[#7b3fc7]/60">
                     13 Integrated Domains
