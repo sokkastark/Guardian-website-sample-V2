@@ -88,11 +88,11 @@ export default function Footer() {
                   Who We Serve
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/services" className="text-[#1c1636] hover:text-[#7b3fc7] transition-colors font-medium block py-0.5">
                   Services
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 

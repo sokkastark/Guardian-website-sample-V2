@@ -32,11 +32,10 @@ export const navigationConfig = [
       { label: 'Payers', path: '/who-we-serve/payers' },
     ]
   },
+  /*
   {
     label: 'Services',
     path: '/services',
-    // Dropdown disabled for now
-    /*
     children: [
       { label: 'Overview', path: '/services' },
       { label: 'Account Executives', path: '/services/account-executives' },
@@ -44,8 +43,8 @@ export const navigationConfig = [
       { label: 'Care Managers', path: '/services/care-managers' },
       { label: 'Care Navigators', path: '/services/care-navigators' },
     ]
-    */
   },
+  */
   {
     label: 'Why Guardian',
     path: '/why-guardian',
