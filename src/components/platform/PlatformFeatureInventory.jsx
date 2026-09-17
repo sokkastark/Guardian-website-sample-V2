@@ -48,7 +48,7 @@ export default function PlatformFeatureInventory() {
         <div className="max-w-3xl mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f2ecf9] text-[#7b3fc7] text-xs font-semibold tracking-wider uppercase mb-4 border border-[#7b3fc7]/20 shadow-xs">
             <Layers className="w-3.5 h-3.5 text-[#ff7a57]" />
-            <span>GUARDIAN PLATFORM CAPABILITIES // COMPLETE FEATURE INVENTORY</span>
+            <span>GUARDIAN PLATFORM CAPABILITIES // COMPLETE FEATURE DIRECTORY</span>
           </div>
           
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1c1636] tracking-tight leading-[1.14] mb-4">
@@ -56,9 +56,9 @@ export default function PlatformFeatureInventory() {
           </h2>
           
           <p className="text-base sm:text-lg text-[#524b6b] leading-relaxed">
-            The complete feature inventory extracted directly from official <strong>Guardian Product Profile 6.0</strong>—spanning 
+            A comprehensive, granular directory of Guardian’s enterprise capabilities—spanning 
             {' '}<span className="font-semibold text-[#7b3fc7]">{totalCategoriesCount} core modules</span> and{' '}
-            <span className="font-semibold text-[#1c1636]">{totalFeaturesCount} granular capabilities</span> designed for Value-Based Care excellence.
+            <span className="font-semibold text-[#1c1636]">{totalFeaturesCount} platform capabilities</span> engineered for Value-Based Care excellence.
           </p>
         </div>
 
@@ -194,8 +194,8 @@ export default function PlatformFeatureInventory() {
                   </div>
 
                   <div className="flex items-center gap-3 self-start md:self-auto shrink-0">
-                    <span className="text-xs font-mono text-[#727272] bg-[#faf8fd] px-3 py-1.5 rounded-xl border border-[#ede7f6]">
-                      Source: Product Profile 6.0 ({activeCategory.page})
+                    <span className="text-xs font-mono font-semibold text-[#7b3fc7] bg-[#f2ecf9] px-3 py-1.5 rounded-xl border border-[#7b3fc7]/20">
+                      {activeCategory.tag}
                     </span>
                     <span className="text-xs font-mono font-bold text-white bg-[#1c1636] px-3 py-1.5 rounded-xl">
                       {activeCategory.features.length} Features
@@ -222,7 +222,7 @@ export default function PlatformFeatureInventory() {
                 <div className="mt-8 pt-6 border-t border-[#f0edf7] flex flex-col sm:flex-row items-center justify-between text-xs text-[#727272] gap-3">
                   <div className="flex items-center gap-2">
                     <FileText className="w-4 h-4 text-[#7b3fc7]" />
-                    <span>Complete capability set verified against Guardian Product Profile 6.0 specification.</span>
+                    <span>Comprehensive platform capability set engineered for enterprise healthcare organizations and risk-bearing entities.</span>
                   </div>
                   <span className="font-mono text-[11px] text-[#7b3fc7]">
                     Category {productFeatureCategories.findIndex(c => c.id === activeCategory.id) + 1} of {totalCategoriesCount}

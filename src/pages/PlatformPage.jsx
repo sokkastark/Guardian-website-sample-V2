@@ -303,13 +303,13 @@ export default function PlatformPage() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-purple-200 text-xs font-semibold tracking-wider uppercase mb-4">
               <Layers className="w-3.5 h-3.5 text-[#ff7a57]" />
-              <span>GUARDIAN PRODUCT PROFILE // APPLICATION MODULES</span>
+              <span>GUARDIAN PLATFORM SUITE // APPLICATION MODULES</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4">
               11 Core Application Modules. One Unified Platform.
             </h2>
             <p className="text-base sm:text-lg text-purple-200/90 leading-relaxed">
-              Built directly on Guardian’s official Product Profile architecture, combining Value-Based Care, Clinically Integrated Network (CIN) workflows, and Patient 360 intelligence into a seamless user experience.
+              Built on Guardian’s unified clinical and analytical architecture, combining Value-Based Care, Clinically Integrated Network (CIN) workflows, and Patient 360 intelligence into a seamless user experience.
             </p>
           </div>
 
