@@ -22,6 +22,7 @@ import {
   HeartPulse,
   LineChart
 } from 'lucide-react';
+import PlatformFeatureInventory from '../components/platform/PlatformFeatureInventory';
 
 export default function PlatformPage() {
   const [activeStep, setActiveStep] = useState(0);
@@ -715,6 +716,11 @@ export default function PlatformPage() {
           </div>
         </div>
       </section>
+
+      {/* ─────────────────────────────────────────────────────────────
+          SECTION 7.5: COMPLETE FEATURE INVENTORY (PRODUCT PROFILE 6.0)
+          ───────────────────────────────────────────────────────────── */}
+      <PlatformFeatureInventory />
 
       {/* ─────────────────────────────────────────────────────────────
           SECTION 8: TECHNOLOGY + PEOPLE
