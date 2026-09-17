@@ -173,67 +173,69 @@ export default function PlatformPage() {
           <div className="absolute inset-0 ambient-grid opacity-15" />
         </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-              <div className="lg:col-span-6">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-purple-200 text-xs font-semibold tracking-wider uppercase mb-6">
-                  <Layers className="w-3.5 h-3.5 text-[#ff7a57]" />
-                  <span>GUARDIAN POPULATION HEALTH PLATFORM</span>
-                </div>
-
-                <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-white leading-[1.14] mb-6">
-                  <span className="block text-white">One connected view</span>
-                  <span className="block mt-1 text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-white to-[#ff7a57]">
-                    of healthcare.
-                  </span>
-                </h1>
-
-                <p className="text-base sm:text-xl text-purple-100/90 leading-relaxed max-w-2xl mb-10 font-normal">
-                  Guardian connects healthcare data across the care journey, transforms it into meaningful clinical intelligence, and puts the right information into the hands of the people who need to act.
-                </p>
-
-                <div className="flex flex-wrap items-center gap-4">
-                  <a
-                    href="#architecture"
-                    className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm text-white bg-[#7b3fc7] hover:bg-[#9565d2] shadow-[0_4px_20px_rgba(123,63,199,0.45)] transition-all duration-300 hover:scale-[1.02] active:scale-95"
-                  >
-                    <span>Explore Architecture</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </a>
-
-                  <Link
-                    to="/contact"
-                    className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md transition-all duration-300"
-                  >
-                    <span>Talk to Guardian</span>
-                  </Link>
-                </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-6">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-purple-200 text-xs font-semibold tracking-wider uppercase mb-6">
+                <Layers className="w-3.5 h-3.5 text-[#ff7a57]" />
+                <span>GUARDIAN POPULATION HEALTH PLATFORM</span>
               </div>
 
-              {/* Product Proof Layer: Actual Guardian Dashboard UI Application Window */}
-              <div className="lg:col-span-6">
-                <div className="relative rounded-2xl bg-[#1a1233] border border-white/20 shadow-[0_24px_60px_rgba(0,0,0,0.5)] p-2.5 overflow-hidden group">
-                  <div className="flex items-center justify-between px-3 py-2 bg-[#120b24] rounded-t-xl border-b border-white/10 mb-2">
-                    <div className="flex items-center gap-2">
-                      <span className="w-3 h-3 rounded-full bg-red-500/80 inline-block" />
-                      <span className="w-3 h-3 rounded-full bg-yellow-500/80 inline-block" />
-                      <span className="w-3 h-3 rounded-full bg-green-500/80 inline-block" />
-                      <span className="text-[11px] text-purple-300 font-mono ml-2">app.itsguardian.com / dashboard</span>
-                    </div>
-                    <span className="text-[10px] px-2 py-0.5 rounded bg-[#7b3fc7]/40 text-purple-200 border border-[#7b3fc7]/60">
-                      Live Environment
-                    </span>
+              <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-white leading-[1.14] mb-6">
+                <span className="block text-white">One connected view</span>
+                <span className="block mt-1 text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-white to-[#ff7a57]">
+                  of healthcare.
+                </span>
+              </h1>
+
+              <p className="text-base sm:text-xl text-purple-100/90 leading-relaxed max-w-2xl mb-10 font-normal">
+                Guardian connects healthcare data across the care journey, transforms it into meaningful clinical intelligence, and puts the right information into the hands of the people who need to act.
+              </p>
+
+              <div className="flex flex-wrap items-center gap-4">
+                <a
+                  href="#architecture"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm text-white bg-[#7b3fc7] hover:bg-[#9565d2] shadow-[0_4px_20px_rgba(123,63,199,0.45)] transition-all duration-300 hover:scale-[1.02] active:scale-95"
+                >
+                  <span>Explore Architecture</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md transition-all duration-300"
+                >
+                  <span>Talk to Guardian</span>
+                </Link>
+              </div>
+            </div>
+
+            {/* Product Proof Layer: Actual Guardian Dashboard UI Application Window */}
+            <div className="lg:col-span-6">
+              <div className="relative rounded-2xl bg-[#1a1233] border border-white/20 shadow-[0_24px_60px_rgba(0,0,0,0.5)] p-2.5 overflow-hidden group">
+                <div className="flex items-center justify-between px-3 py-2 bg-[#120b24] rounded-t-xl border-b border-white/10 mb-2">
+                  <div className="flex items-center gap-2">
+                    <span className="w-3 h-3 rounded-full bg-red-500/80 inline-block" />
+                    <span className="w-3 h-3 rounded-full bg-yellow-500/80 inline-block" />
+                    <span className="w-3 h-3 rounded-full bg-green-500/80 inline-block" />
+                    <span className="text-[11px] text-purple-300 font-mono ml-2">app.itsguardian.com / dashboard</span>
                   </div>
-                  <div className="relative rounded-lg overflow-hidden bg-black">
-                    <img 
-                      src="/images/product-ui/ui-dashboard-main.png" 
-                      alt="Guardian Population Health Platform Dashboard" 
-                      className="w-full h-auto object-cover rounded-lg shadow-inner filter brightness-105 contrast-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#120b24]/40 via-transparent to-transparent opacity-60 pointer-events-none" />
-                  </div>
+                  <span className="text-[10px] px-2 py-0.5 rounded bg-[#7b3fc7]/40 text-purple-200 border border-[#7b3fc7]/60">
+                    Live Environment
+                  </span>
+                </div>
+                <div className="relative rounded-lg overflow-hidden bg-black">
+                  <img 
+                    src="/images/appliction images/Main Platform Dashboard.png" 
+                    alt="Guardian Population Health Platform Dashboard" 
+                    className="w-full h-auto object-cover rounded-lg shadow-inner filter brightness-105 contrast-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#120b24]/40 via-transparent to-transparent opacity-60 pointer-events-none" />
                 </div>
               </div>
             </div>
+          </div>
+        </div>
       </section>
 
       {/* ─────────────────────────────────────────────────────────────
