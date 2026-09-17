@@ -88,20 +88,20 @@ export default function ChildPageLayout({
               </p>
 
               {/* Action Buttons */}
-              <div className="pt-2 flex flex-wrap items-center gap-4">
+              <div className="pt-2 flex items-center gap-3">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm text-[#1c1636] bg-white hover:bg-[#f2ecf9] shadow-lg shadow-black/20 transition-all duration-200 hover:scale-105 active:scale-95"
+                  className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 rounded-full font-semibold text-xs sm:text-sm text-[#1c1636] bg-white hover:bg-[#f2ecf9] shadow-lg shadow-black/20 transition-all duration-200 hover:scale-105 active:scale-95 whitespace-nowrap shrink-0"
                 >
                   <span>{ctaText}</span>
-                  <ArrowRight className="w-4 h-4 text-[#7b3fc7]" />
+                  <ArrowRight className="w-3.5 h-3.5 text-[#7b3fc7] shrink-0" />
                 </Link>
 
                 <Link
                   to={categoryPath}
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-medium text-sm text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md transition-all duration-200"
+                  className="inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-3 rounded-full font-medium text-xs sm:text-sm text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md transition-all duration-200 whitespace-nowrap shrink-0"
                 >
-                  <span>Explore {category} Overview</span>
+                  <span>{category} Overview</span>
                 </Link>
               </div>
             </motion.div>

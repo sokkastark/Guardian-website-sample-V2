@@ -192,10 +192,10 @@ export default function PlatformPage() {
                 Guardian connects healthcare data across the care journey, transforms it into meaningful clinical intelligence, and puts the right information into the hands of the people who need to act.
               </p>
 
-              <div className="flex flex-wrap items-center gap-4">
+              <div className="flex items-center gap-3">
                 <a
                   href="#architecture"
-                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm text-white bg-[#7b3fc7] hover:bg-[#9565d2] shadow-[0_4px_20px_rgba(123,63,199,0.45)] transition-all duration-300 hover:scale-[1.02] active:scale-95"
+                  className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 rounded-full font-medium text-xs sm:text-sm text-white bg-[#7b3fc7] hover:bg-[#9565d2] shadow-[0_4px_20px_rgba(123,63,199,0.45)] transition-all duration-300 hover:scale-[1.02] active:scale-95 whitespace-nowrap shrink-0"
                 >
                   <span>Explore Architecture</span>
                   <ArrowRight className="w-4 h-4" />
@@ -203,7 +203,7 @@ export default function PlatformPage() {
 
                 <Link
                   to="/contact"
-                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md transition-all duration-300"
+                  className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3 rounded-full font-medium text-xs sm:text-sm text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md transition-all duration-300 whitespace-nowrap shrink-0"
                 >
                   <span>Talk to Guardian</span>
                 </Link>
