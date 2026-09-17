@@ -12,13 +12,13 @@ export default function CareManagementPage() {
   ];
 
   const capabilities = [
-    'Patient identification',
-    'Patient Master Chart',
-    'Risk and care-gap visibility',
-    'Care planning',
-    'Care coordination',
-    'Patient outreach',
-    'Follow-up and monitoring'
+    'Centralized Care Management Workspace & Care Plan Builder',
+    '150+ Clinical Assessment Scales & Forms (Depression, Cognitive, Fall Risk, ADL, Custom Scoring)',
+    'Real-time ADT event notifications & Hospital Discharge summary retrieval',
+    'Transitions of Care (TOC) conversational AI text & call outreach within 24 hours',
+    'CCM, TCM, RPM & PCM multi-program patient tracking & task management',
+    'Closed-loop Referral Management within Clinically Integrated Network (CIN)',
+    'Medication management, polypharmacy adherence, and SDOH barrier mitigation'
   ];
 
   const siblings = [
@@ -42,7 +42,8 @@ export default function CareManagementPage() {
       capabilities={capabilities}
       capabilitiesTitle="Key Capabilities"
       capabilitiesSubtitle="What Guardian helps care teams achieve across patient workflows"
-      heroVisualBadge="Patient Master Chart Integration"
+      heroVisualBadge="Care Plan Builder & 150+ Scales"
+      heroImage="/images/product-ui/ui-care-management.png"
       contextType="care-management"
       siblings={siblings}
       closingHeadline="Make every care decision more informed."

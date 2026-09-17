@@ -12,13 +12,12 @@ export default function InformationServicesPage() {
   ];
 
   const capabilities = [
-    'Healthcare information delivery',
-    'Patient-centered information',
-    'Clinical information access',
-    'Operational information support',
-    'Analytics and reporting support',
-    'Information for care workflows',
-    'Connected healthcare intelligence'
+    'Health Library repository (Store and playback patient education PDFs, Word docs, HTML & Videos)',
+    'EMR appointment ingestion & API patient scheduling integration',
+    'Direct Secure Messaging (DSM) automated CCDA read & patient search',
+    'Role-based dashboard & report distribution for care teams',
+    'Clinical document exchange & longitudinal document upload',
+    'Real-time operational notifications & task dispatching'
   ];
 
   const siblings = [

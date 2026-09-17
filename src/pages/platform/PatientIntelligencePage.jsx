@@ -43,6 +43,7 @@ export default function PatientIntelligencePage() {
       capabilitiesTitle="Key Capabilities"
       capabilitiesSubtitle="What the Guardian Platform delivers for longitudinal patient intelligence"
       heroVisualBadge="Patient Master Chart Core"
+      heroImage="/images/product-ui/ui-patient-360.png"
       contextType="patient-intelligence"
       siblings={siblings}
       closingHeadline="One patient. One connected view."

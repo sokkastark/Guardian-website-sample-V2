@@ -12,13 +12,12 @@ export default function PatientEngagementPage() {
   ];
 
   const capabilities = [
-    'Patient identification',
-    'Patient outreach',
-    'Real-time patient interactions',
-    'Care-plan support',
-    'Follow-up workflows',
-    'Care coordination',
-    'Engagement visibility'
+    'Telemedicine: Secure 1-Click Browser Video Consults & Virtual Waiting Rooms (No Login/App Required)',
+    'Conversational AI Patient Communication & Automated Follow-Up Scheduling',
+    'Patient Population Campaigns Engine & Targeted Cohort Segmentation',
+    'Real-Time Patient Clinical History Access During Virtual Consultation Visits',
+    'Targeted Outreach Overcoming SDOH Barriers, Transportation & Specialist Booking',
+    'Integrated SMS & Email Notifications with Clinical Visit Documentation'
   ];
 
   const siblings = [
@@ -42,7 +41,8 @@ export default function PatientEngagementPage() {
       capabilities={capabilities}
       capabilitiesTitle="Key Capabilities"
       capabilitiesSubtitle="What Guardian helps healthcare teams achieve in patient engagement"
-      heroVisualBadge="Care-Plan & Workflow Alignment"
+      heroVisualBadge="1-Click Telemedicine & Campaigns"
+      heroImage="/images/product-ui/ui-telemedicine.png"
       contextType="care-management"
       siblings={siblings}
       closingHeadline="Turn patient information into meaningful action."

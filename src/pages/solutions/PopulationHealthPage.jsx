@@ -12,12 +12,12 @@ export default function PopulationHealthPage() {
   ];
 
   const capabilities = [
-    'Patient context',
-    'Risk visibility',
-    'Care opportunities',
-    'Population trends',
-    'Quality opportunities',
-    'Care-management priorities'
+    'Cardiometabolic Care: Biomarker Data & Cardiovascular Risk Insights',
+    'Proactive Lab Gap Closure & Intelligent Test Recommendations',
+    'Remote Patient Monitoring (RPM) for CHF, Elevated BP, Diabetes, COPD & Obesity',
+    'Longitudinal population risk stratification & chronic cohort monitoring',
+    'Patient Population Segmentation & Targeted Campaign Management',
+    'Multi-practice data ingestion & unified cross-payer population overview'
   ];
 
   const siblings = [
@@ -41,7 +41,8 @@ export default function PopulationHealthPage() {
       capabilities={capabilities}
       capabilitiesTitle="Key Capabilities"
       capabilitiesSubtitle="What Guardian helps healthcare organizations achieve across populations"
-      heroVisualBadge="Population-Scale Clinical Intelligence"
+      heroVisualBadge="Cardiometabolic & RPM Intelligence"
+      heroImage="/images/product-ui/ui-cardiometabolic-care.png"
       contextType="population-health"
       siblings={siblings}
       closingHeadline="Turn population data into focused action."

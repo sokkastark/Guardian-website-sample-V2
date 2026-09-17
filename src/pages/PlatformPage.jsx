@@ -173,44 +173,64 @@ export default function PlatformPage() {
           <div className="absolute inset-0 ambient-grid opacity-15" />
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="max-w-4xl"
-          >
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-purple-200 text-xs font-semibold tracking-wider uppercase mb-6">
-              <Layers className="w-3.5 h-3.5 text-[#ff7a57]" />
-              <span>THE GUARDIAN PLATFORM</span>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+              <div className="lg:col-span-6">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-purple-200 text-xs font-semibold tracking-wider uppercase mb-6">
+                  <Layers className="w-3.5 h-3.5 text-[#ff7a57]" />
+                  <span>GUARDIAN POPULATION HEALTH PLATFORM</span>
+                </div>
+
+                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.12] mb-6">
+                  One connected view <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-white to-[#ff7a57]">of healthcare.</span>
+                </h1>
+
+                <p className="text-base sm:text-xl text-purple-100/90 leading-relaxed max-w-2xl mb-10 font-normal">
+                  Guardian connects healthcare data across the care journey, transforms it into meaningful clinical intelligence, and puts the right information into the hands of the people who need to act.
+                </p>
+
+                <div className="flex flex-wrap items-center gap-4">
+                  <a
+                    href="#architecture"
+                    className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm text-white bg-[#7b3fc7] hover:bg-[#9565d2] shadow-[0_4px_20px_rgba(123,63,199,0.45)] transition-all duration-300 hover:scale-[1.02] active:scale-95"
+                  >
+                    <span>Explore Architecture</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+
+                  <Link
+                    to="/contact"
+                    className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md transition-all duration-300"
+                  >
+                    <span>Talk to Guardian</span>
+                  </Link>
+                </div>
+              </div>
+
+              {/* Product Proof Layer: Actual Guardian Dashboard UI Application Window */}
+              <div className="lg:col-span-6">
+                <div className="relative rounded-2xl bg-[#1a1233] border border-white/20 shadow-[0_24px_60px_rgba(0,0,0,0.5)] p-2.5 overflow-hidden group">
+                  <div className="flex items-center justify-between px-3 py-2 bg-[#120b24] rounded-t-xl border-b border-white/10 mb-2">
+                    <div className="flex items-center gap-2">
+                      <span className="w-3 h-3 rounded-full bg-red-500/80 inline-block" />
+                      <span className="w-3 h-3 rounded-full bg-yellow-500/80 inline-block" />
+                      <span className="w-3 h-3 rounded-full bg-green-500/80 inline-block" />
+                      <span className="text-[11px] text-purple-300 font-mono ml-2">app.itsguardian.com / dashboard</span>
+                    </div>
+                    <span className="text-[10px] px-2 py-0.5 rounded bg-[#7b3fc7]/40 text-purple-200 border border-[#7b3fc7]/60">
+                      Live Environment
+                    </span>
+                  </div>
+                  <div className="relative rounded-lg overflow-hidden bg-black">
+                    <img 
+                      src="/images/product-ui/ui-dashboard-main.png" 
+                      alt="Guardian Population Health Platform Dashboard" 
+                      className="w-full h-auto object-cover rounded-lg shadow-inner filter brightness-105 contrast-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#120b24]/40 via-transparent to-transparent opacity-60 pointer-events-none" />
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.12] mb-6">
-              One connected view <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-white to-[#ff7a57]">of healthcare.</span>
-            </h1>
-
-            <p className="text-base sm:text-xl text-purple-100/90 leading-relaxed max-w-3xl mb-10 font-normal">
-              Guardian connects healthcare data across the care journey, transforms it into meaningful clinical intelligence, and puts the right information into the hands of the people who need to act.
-            </p>
-
-            <div className="flex flex-wrap items-center gap-4">
-              <a
-                href="#journey"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm text-white bg-[#7b3fc7] hover:bg-[#9565d2] shadow-[0_4px_20px_rgba(123,63,199,0.45)] transition-all duration-300 hover:scale-[1.02] active:scale-95"
-              >
-                <span>Explore the Platform</span>
-                <ArrowRight className="w-4 h-4" />
-              </a>
-
-              <Link
-                to="/contact"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-sm text-white bg-white/10 hover:bg-white/20 border border-white/20 backdrop-blur-md transition-all duration-300"
-              >
-                <span>Talk to Guardian</span>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
       </section>
 
       {/* ─────────────────────────────────────────────────────────────
@@ -366,40 +386,36 @@ export default function PlatformPage() {
             </div>
 
             <div className="lg:col-span-6">
-              {/* Interactive Patient Master Chart HUD visualization */}
-              <div className="p-6 sm:p-8 rounded-3xl bg-white/5 border border-white/15 backdrop-blur-xl shadow-2xl">
-                <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-[#7b3fc7] to-[#ff7a57] flex items-center justify-center font-bold text-white">
-                      PMC
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-white">Patient Master Chart</h4>
-                      <span className="text-[11px] text-purple-300">Longitudinal Identity Resolved</span>
-                    </div>
+              <div className="relative rounded-2xl bg-white/5 border border-white/20 backdrop-blur-xl p-3 shadow-2xl overflow-hidden group">
+                <div className="flex items-center justify-between pb-3 border-b border-white/10 mb-3 px-1">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2.5 h-2.5 rounded-full bg-red-400 inline-block" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-yellow-400 inline-block" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-green-400 inline-block" />
+                    <span className="text-xs font-bold text-white ml-2">Patient Master Chart (Patient 360°)</span>
                   </div>
-                  <span className="text-xs px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
-                    Real-Time Active
+                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-mono">
+                    13 Integrated Domains
                   </span>
                 </div>
 
-                <div className="space-y-3">
-                  <div className="p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
-                    <span className="text-xs text-white/80 font-medium">Multi-facility EHR Records</span>
-                    <span className="text-xs text-purple-300 font-mono">Harmonized</span>
-                  </div>
-                  <div className="p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
-                    <span className="text-xs text-white/80 font-medium">Historical Adjudicated Claims</span>
-                    <span className="text-xs text-purple-300 font-mono">Synthesized</span>
-                  </div>
-                  <div className="p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
-                    <span className="text-xs text-white/80 font-medium">Diagnostic Lab Feeds & ADT Alerts</span>
-                    <span className="text-xs text-purple-300 font-mono">Continuous Stream</span>
-                  </div>
-                  <div className="p-3.5 rounded-xl bg-[#7b3fc7]/20 border border-[#7b3fc7]/40 flex items-center justify-between">
-                    <span className="text-xs text-white font-semibold">Care Team Workflow Dispatching</span>
-                    <span className="text-xs text-[#ff7a57] font-mono font-bold">Action Ready</span>
-                  </div>
+                <div className="rounded-xl overflow-hidden border border-white/10 shadow-lg bg-black/40">
+                  <img 
+                    src="/images/product-ui/ui-patient-360.png" 
+                    alt="Guardian Patient Master Chart 360° View" 
+                    className="w-full h-auto object-cover filter brightness-105"
+                  />
+                </div>
+
+                <div className="mt-3 grid grid-cols-3 sm:grid-cols-4 gap-1.5 text-[10px] font-mono text-purple-200/90 text-center">
+                  <span className="p-1 rounded bg-white/5 border border-white/10">Diagnoses</span>
+                  <span className="p-1 rounded bg-white/5 border border-white/10">Medications</span>
+                  <span className="p-1 rounded bg-white/5 border border-white/10">Vitals</span>
+                  <span className="p-1 rounded bg-white/5 border border-white/10">Lab Results</span>
+                  <span className="p-1 rounded bg-white/5 border border-white/10">Procedures</span>
+                  <span className="p-1 rounded bg-white/5 border border-white/10">Care Gaps</span>
+                  <span className="p-1 rounded bg-white/5 border border-white/10">MRA Gaps</span>
+                  <span className="p-1 rounded bg-white/5 border border-white/10">Risk Scores</span>
                 </div>
               </div>
             </div>

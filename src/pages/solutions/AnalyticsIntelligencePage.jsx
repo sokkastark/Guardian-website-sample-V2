@@ -12,13 +12,12 @@ export default function AnalyticsIntelligencePage() {
   ];
 
   const capabilities = [
-    'Patient-level intelligence',
-    'Population insights',
-    'Risk visibility',
-    'Care opportunities',
-    'Quality and performance',
-    'Utilization patterns',
-    'Operational insights'
+    'Executive Cockpits & Real-Time KPI Monitoring Across Clinical & Financial Domains',
+    'PMPM / PMPY Financial & Cost Analytics with Provider Performance Scoring',
+    'Population Health Analytics, Utilization Monitoring & Predictive Risk Insights',
+    'Care Management, Referral & Value-Based Care Outcome Analytics',
+    'Custom Dashboards, Configurable Reports & Drill-Down / Drill-Through Analysis',
+    'Scheduled Report Distribution, Benchmarking & Ad-Hoc Reporting'
   ];
 
   const siblings = [
@@ -42,7 +41,8 @@ export default function AnalyticsIntelligencePage() {
       capabilities={capabilities}
       capabilitiesTitle="Key Capabilities"
       capabilitiesSubtitle="What Guardian helps healthcare organizations achieve through connected intelligence"
-      heroVisualBadge="Operational & Clinical Decisioning"
+      heroVisualBadge="Executive Cockpits & PMPM Analytics"
+      heroImage="/images/product-ui/ui-pop-health-analytics.png"
       contextType="population-health"
       siblings={siblings}
       closingHeadline="Turn healthcare data into actionable intelligence."

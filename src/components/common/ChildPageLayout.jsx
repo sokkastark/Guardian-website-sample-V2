@@ -33,6 +33,7 @@ export default function ChildPageLayout({
   closingHeadline,
   closingText,
   heroVisualBadge,
+  heroImage,
   contextType = 'default'
 }) {
   return (
@@ -111,39 +112,62 @@ export default function ChildPageLayout({
               transition={{ duration: 0.5, delay: 0.2 }}
               className="lg:col-span-4"
             >
-              <div className="relative rounded-3xl bg-white/5 border border-white/15 p-6 sm:p-8 backdrop-blur-xl shadow-2xl shadow-black/30">
-                <div className="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
-                  <span className="text-xs font-mono uppercase tracking-wider text-purple-200">
-                    {category} // Architecture
-                  </span>
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-[11px] font-medium">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                    Connected
-                  </span>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="p-3.5 rounded-xl bg-white/10 border border-white/10">
-                    <p className="text-xs text-purple-200/80 mb-1">Focus Area</p>
-                    <p className="text-sm font-semibold text-white">{title}</p>
-                  </div>
-                  <div className="p-3.5 rounded-xl bg-white/10 border border-white/10">
-                    <p className="text-xs text-purple-200/80 mb-1">Operational Mode</p>
-                    <p className="text-sm font-semibold text-purple-100">People + Technology Enabled</p>
-                  </div>
-                  {heroVisualBadge && (
-                    <div className="p-3.5 rounded-xl bg-[#7b3fc7]/20 border border-[#7b3fc7]/40">
-                      <p className="text-xs text-purple-300 mb-0.5 font-mono uppercase">Key Foundation</p>
-                      <p className="text-xs font-medium text-white">{heroVisualBadge}</p>
+              {heroImage ? (
+                <div className="relative rounded-2xl bg-white/5 border border-white/20 p-2.5 backdrop-blur-xl shadow-2xl shadow-black/40 overflow-hidden group">
+                  <div className="flex items-center justify-between px-2.5 py-1.5 bg-black/30 rounded-t-xl border-b border-white/10 mb-2">
+                    <div className="flex items-center gap-1.5">
+                      <span className="w-2.5 h-2.5 rounded-full bg-red-400 inline-block" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-yellow-400 inline-block" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-green-400 inline-block" />
+                      <span className="text-[10px] text-purple-200 font-mono ml-1.5">{title}</span>
                     </div>
-                  )}
+                    <span className="text-[9px] px-2 py-0.5 rounded bg-[#7b3fc7]/40 text-purple-200 border border-[#7b3fc7]/50 font-mono">
+                      Guardian 6.0
+                    </span>
+                  </div>
+                  <div className="rounded-lg overflow-hidden border border-white/10 shadow-md bg-black">
+                    <img 
+                      src={heroImage} 
+                      alt={`${title} Interface`} 
+                      className="w-full h-auto object-cover filter brightness-105"
+                    />
+                  </div>
                 </div>
+              ) : (
+                <div className="relative rounded-3xl bg-white/5 border border-white/15 p-6 sm:p-8 backdrop-blur-xl shadow-2xl shadow-black/30">
+                  <div className="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
+                    <span className="text-xs font-mono uppercase tracking-wider text-purple-200">
+                      {category} // Architecture
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-[11px] font-medium">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                      Connected
+                    </span>
+                  </div>
 
-                <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-purple-200/70">
-                  <span>Guardian Health Service</span>
-                  <span>Enterprise Ready</span>
+                  <div className="space-y-3">
+                    <div className="p-3.5 rounded-xl bg-white/10 border border-white/10">
+                      <p className="text-xs text-purple-200/80 mb-1">Focus Area</p>
+                      <p className="text-sm font-semibold text-white">{title}</p>
+                    </div>
+                    <div className="p-3.5 rounded-xl bg-white/10 border border-white/10">
+                      <p className="text-xs text-purple-200/80 mb-1">Operational Mode</p>
+                      <p className="text-sm font-semibold text-purple-100">People + Technology Enabled</p>
+                    </div>
+                    {heroVisualBadge && (
+                      <div className="p-3.5 rounded-xl bg-[#7b3fc7]/20 border border-[#7b3fc7]/40">
+                        <p className="text-xs text-purple-300 mb-0.5 font-mono uppercase">Key Foundation</p>
+                        <p className="text-xs font-medium text-white">{heroVisualBadge}</p>
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-purple-200/70">
+                    <span>Guardian Health Service</span>
+                    <span>Enterprise Ready</span>
+                  </div>
                 </div>
-              </div>
+              )}
             </motion.div>
           </div>
         </div>

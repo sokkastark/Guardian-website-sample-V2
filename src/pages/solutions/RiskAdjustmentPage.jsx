@@ -12,13 +12,12 @@ export default function RiskAdjustmentPage() {
   ];
 
   const capabilities = [
-    'Patient data aggregation',
-    'Risk visibility',
-    'HCC gap identification',
-    'Clinical documentation context',
-    'Risk coding support',
-    'Workflow support',
-    'Performance visibility'
+    'Proprietary Multi-Dimensional Risk Scoring (Clinical, Utilization, Medication, SDOH, Financial, Behavioral)',
+    'Integrated CMS HCC V24 & V28 Dual Model Support & RAF Score Calculation',
+    'Real-Time Risk Recalculation using Live Clinical Data & Event Prediction',
+    'HCC Gap Identification, Suspected Condition Detection & Coding Opportunities',
+    'Integrated Clinical & Claims Review with Risk Coder Chart Audit Documentation',
+    'Pre-Encounter Clinical Intelligence & Compliant Persistent Condition Recapture'
   ];
 
   const siblings = [
@@ -42,7 +41,8 @@ export default function RiskAdjustmentPage() {
       capabilities={capabilities}
       capabilitiesTitle="Key Capabilities"
       capabilitiesSubtitle="What Guardian helps healthcare teams achieve in risk adjustment"
-      heroVisualBadge="HCC Gap & Documentation Context"
+      heroVisualBadge="CMS HCC V24 & V28 Dual Engine"
+      heroImage="/images/product-ui/ui-risk-stratification.png"
       contextType="risk-adjustment"
       siblings={siblings}
       closingHeadline="Turn risk data into informed action."

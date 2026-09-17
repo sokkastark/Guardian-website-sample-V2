@@ -264,13 +264,13 @@ export default function SolutionsSection() {
                       {/* Satellite Text Label */}
                       <div className="mt-1.5 sm:mt-2 text-center">
                         {sat.id === 'pop-health' ? (
-                          <div className="flex items-center justify-center gap-3 sm:gap-4 text-[10px] sm:text-xs font-bold tracking-tight whitespace-nowrap">
-                            <span className={`transition-colors ${
+                          <div className="w-40 sm:w-48 flex items-center text-[10px] sm:text-xs font-bold tracking-tight whitespace-nowrap">
+                            <span className={`w-1/2 text-right pr-2.5 sm:pr-3 transition-colors ${
                               isActive ? 'text-[#1c1636]' : 'text-[#524b6b] group-hover:text-[#1c1636]'
                             }`}>
                               Population
                             </span>
-                            <span className={`transition-colors ${
+                            <span className={`w-1/2 text-left pl-2.5 sm:pl-3 transition-colors ${
                               isActive ? 'text-[#1c1636]' : 'text-[#524b6b] group-hover:text-[#1c1636]'
                             }`}>
                               Health

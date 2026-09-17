@@ -12,13 +12,13 @@ export default function DataIntegrationPage() {
   ];
 
   const capabilities = [
-    'Healthcare data integration',
-    'EHR and clinical data connectivity',
-    'Claims and healthcare data connectivity',
-    'ADT and other healthcare data sources',
-    'Patient-centered data aggregation',
-    'Connected data foundation',
-    'Support for downstream analytics and workflows'
+    'Multi-source data ingestion (Claims, EHRs, Labs, Pharmacy, Radiology, HIE, ADT)',
+    'Direct Secure Messaging (DSM) native EMR integration & exchange',
+    'Real-time ADT event notifications & automated discharge summary retrieval',
+    'Clinical Document Exchange (CCD/C-CDA) & FHIR R4 / HL7 data format support',
+    'CMS CCLF & BCDA data feed connectivity',
+    'Cross-organization patient lookup & longitudinal record aggregation',
+    'Connected data foundation for real-time clinical workflows'
   ];
 
   const siblings = [

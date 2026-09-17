@@ -12,13 +12,12 @@ export default function QualityPerformancePage() {
   ];
 
   const capabilities = [
-    'Quality opportunity identification',
-    'Performance visibility',
-    'Patient-level context',
-    'Care-gap visibility',
-    'Workflow support',
-    'Reporting and analytics',
-    'Continuous performance monitoring'
+    'Proactive Quality Care Gap Identification, Real-Time Surveillance & Closure',
+    'MSSP Quality Measures, MIPS Performance, CMS Star Ratings & HEDIS Surveillance',
+    'CMS Certified MIPS Registry for Measure Validation & Direct Submission',
+    'Encounters Module: Annual Wellness Visit (AWV), Health Risk Assessment (HRA), IPPE',
+    'Provider Quality Scorecards & Preventive Care Tracking',
+    'Quality Measure Library with Manual Override & Interactive Action Dashboards'
   ];
 
   const siblings = [
@@ -42,7 +41,8 @@ export default function QualityPerformancePage() {
       capabilities={capabilities}
       capabilitiesTitle="Key Capabilities"
       capabilitiesSubtitle="What Guardian helps healthcare organizations achieve in quality performance"
-      heroVisualBadge="Continuous Performance Monitoring"
+      heroVisualBadge="CMS MIPS Certified Registry"
+      heroImage="/images/product-ui/ui-quality-manager.png"
       contextType="quality-performance"
       siblings={siblings}
       closingHeadline="Turn quality insights into action."

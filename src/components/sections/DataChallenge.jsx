@@ -158,6 +158,30 @@ export default function DataChallenge() {
       delay: 0.5,
       isCenter: false,
     },
+    {
+      id: 'pharmacy',
+      label: 'Pharmacy',
+      sub: 'Scripts',
+      icon: Database,
+      bg: 'bg-gradient-to-br from-[#f59e0b] to-[#d97706]',
+      ring: 'ring-2 ring-amber-400/40 shadow-[0_6px_24px_rgba(245,158,11,0.35)]',
+      x: 30,
+      y: 65,
+      delay: 0.55,
+      isCenter: false,
+    },
+    {
+      id: 'radiology',
+      label: 'Radiology',
+      sub: 'Imaging',
+      icon: Activity,
+      bg: 'bg-gradient-to-br from-[#ec4899] to-[#be185d]',
+      ring: 'ring-2 ring-pink-400/40 shadow-[0_6px_24px_rgba(236,72,153,0.35)]',
+      x: 75,
+      y: 30,
+      delay: 0.6,
+      isCenter: false,
+    },
   ];
 
   return (

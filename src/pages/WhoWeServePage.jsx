@@ -87,9 +87,25 @@ export default function WhoWeServePage() {
               Different roles. <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-white to-[#ff7a57]">One connected view of healthcare.</span>
             </h1>
 
-            <p className="text-base sm:text-xl text-purple-100/90 leading-relaxed max-w-3xl mb-10 font-normal">
+            <p className="text-base sm:text-xl text-purple-100/90 leading-relaxed max-w-3xl mb-8 font-normal">
               Guardian helps providers and payers turn connected healthcare data into intelligence, coordinated action, and better-informed decisions.
             </p>
+
+            {/* 7 Target Entity Types from Product Profile Page 1 */}
+            <div className="mb-8 p-4 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-md">
+              <span className="text-[10px] font-mono text-purple-300 uppercase tracking-widest block mb-2 font-semibold">
+                Designed For Value-Based Healthcare Organizations:
+              </span>
+              <div className="flex flex-wrap items-center gap-2 text-xs font-semibold text-white">
+                <span className="px-3 py-1 rounded-full bg-white/15 border border-white/20">ACOs</span>
+                <span className="px-3 py-1 rounded-full bg-white/15 border border-white/20">CINs</span>
+                <span className="px-3 py-1 rounded-full bg-white/15 border border-white/20">Health Plans</span>
+                <span className="px-3 py-1 rounded-full bg-white/15 border border-white/20">Medical Groups</span>
+                <span className="px-3 py-1 rounded-full bg-white/15 border border-white/20">Health Systems</span>
+                <span className="px-3 py-1 rounded-full bg-white/15 border border-white/20">Employer Groups</span>
+                <span className="px-3 py-1 rounded-full bg-[#7b3fc7]/40 text-purple-200 border border-[#7b3fc7]/60">IPAs</span>
+              </div>
+            </div>
 
             <div className="flex flex-wrap items-center gap-4">
               <a

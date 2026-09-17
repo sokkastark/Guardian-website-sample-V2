@@ -10,10 +10,10 @@ export default function CertificationsTrustPage() {
   ];
 
   const capabilities = [
-    'Healthcare data responsibility',
-    'Interoperability participation',
-    'Industry certifications',
-    'Security and trust'
+    'Certifications & Registries: HITRUST Certification, CMS Certified MIPS Registry, eHealth Exchange, CareQuality',
+    'Interoperability Standards: FHIR R4 APIs, HL7 v2.x, Direct Secure Messaging (DSM), HIE Connectivity',
+    'Enterprise Security: Multi-Tenant Tenant Isolation, RBAC, MFA, SSO, Data Encryption at Rest & Transit',
+    'Compliance Commitments: HIPAA Compliance Framework & SOC 2 Security Controls Architecture'
   ];
 
   const siblings = [

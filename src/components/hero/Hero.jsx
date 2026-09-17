@@ -85,7 +85,7 @@ export default function Hero() {
             {/* Eyebrow Badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-purple-200 text-[11px] sm:text-xs font-semibold tracking-wider uppercase mb-3 sm:mb-5 shadow-xs">
               <span className="w-2 h-2 rounded-full bg-[#a855f7] animate-ping" />
-              <span>Healthcare Intelligence</span>
+              <span>GUARDIAN POPULATION HEALTH PLATFORM</span>
             </div>
 
             {/* Headline formatted into exactly two lines */}
@@ -97,8 +97,8 @@ export default function Hero() {
             </h1>
 
             {/* Supporting Copy */}
-            <p className="text-xs sm:text-base text-purple-100/80 leading-relaxed max-w-md mb-4 sm:mb-6 font-normal">
-              Guardian connects healthcare data, clinical intelligence, technology, and healthcare expertise to help organizations make better decisions and take meaningful action.
+            <p className="text-xs sm:text-base text-purple-100/90 leading-relaxed max-w-md mb-4 sm:mb-6 font-normal">
+              Connect healthcare data, clinical intelligence, and healthcare expertise to help your organization understand, prioritize, and act.
             </p>
 
             {/* CTAs */}
