@@ -139,7 +139,7 @@ export default function SolutionsSection() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: '-40px' }}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="lg:col-span-7 flex flex-col items-center justify-center relative"
+            className="lg:col-span-7 flex flex-col items-center justify-center relative py-4 sm:py-6"
           >
             {/* The Constellation Canvas Container (520px x 520px) */}
             <div className="relative w-[340px] h-[340px] sm:w-[480px] sm:h-[480px] lg:w-[520px] lg:h-[520px] flex items-center justify-center">
@@ -157,6 +157,16 @@ export default function SolutionsSection() {
                 <circle cx="260" cy="260" r="210" fill="url(#ringGlow)" />
                 <circle cx="260" cy="260" r="185" fill="none" stroke="#e8e2f2" strokeWidth="1.5" strokeDasharray="4 4" />
                 <circle cx="260" cy="260" r="120" fill="none" stroke="#e8e2f2" strokeWidth="1" strokeDasharray="2 3" opacity="0.6" />
+
+                {/* Continuous Orbiting Glowing Circle traveling along the r=185 dotted line path */}
+                <motion.g
+                  animate={{ rotate: 360 }}
+                  transition={{ repeat: Infinity, duration: 18, ease: 'linear' }}
+                  style={{ transformOrigin: '260px 260px' }}
+                >
+                  <circle cx="260" cy="75" r="5" fill="#7b3fc7" />
+                  <circle cx="260" cy="75" r="11" fill="#a855f7" opacity="0.35" />
+                </motion.g>
 
                 {/* Radial Connector Rays from Center to 6 Satellite Positions */}
                 {satellites.map((sat, i) => {
@@ -190,18 +200,18 @@ export default function SolutionsSection() {
                   ───────────────────────────────────────────── */}
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="relative z-20 w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-white shadow-[0_16px_48px_rgba(123,63,199,0.18)] border border-[#ede7f6] flex flex-col items-center justify-center p-3 text-center cursor-pointer"
+                className="relative z-20 w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-white shadow-[0_16px_48px_rgba(123,63,199,0.18)] border border-[#ede7f6] flex flex-col items-center justify-center p-3 sm:p-4 text-center cursor-pointer"
               >
-                {/* Guardian Gradient Icon */}
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-tr from-[#ff7a57] via-[#7b3fc7] to-[#a855f7] flex items-center justify-center shadow-md mb-1 sm:mb-1.5">
-                  <div className="w-4 h-4 rounded-full bg-white/90 flex items-center justify-center">
-                    <div className="w-2 h-2 rounded-full bg-[#7b3fc7]" />
-                  </div>
-                </div>
+                {/* Official Guardian Brand Logo */}
+                <img 
+                  src="/logos/Logo.webp" 
+                  alt="Guardian Health Service" 
+                  className="h-7 sm:h-9 w-auto max-w-[100px] sm:max-w-[125px] object-contain mb-1 filter drop-shadow-xs" 
+                  onError={(e) => {
+                    e.currentTarget.src = '/logos/guardian-logo.png';
+                  }}
+                />
 
-                <span className="text-xs sm:text-sm font-bold text-[#1c1636] tracking-tight">
-                  guardian
-                </span>
                 <span className="text-[8px] sm:text-[9px] font-mono text-[#7b3fc7] uppercase tracking-wider font-semibold">
                   Core Engine
                 </span>
@@ -213,50 +223,71 @@ export default function SolutionsSection() {
               {satellites.map((sat, idx) => {
                 const Icon = sat.icon;
                 const rad = (sat.angle * Math.PI) / 180;
-                // Responsive distance: 135px on small, 185px on desktop (relative to 520px viewBox)
-                const distancePct = 35.5; // percentage from center
+                // Responsive distance: 35.5% percentage from center
+                const distancePct = 35.5;
                 const xPct = 50 + distancePct * Math.cos(rad);
                 const yPct = 50 + distancePct * Math.sin(rad);
                 const isActive = activeNode === idx;
 
                 return (
-                  <motion.button
+                  <div
                     key={sat.id}
-                    onClick={() => setActiveNode(idx)}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
+                    className="absolute z-30 -translate-x-1/2 -translate-y-1/2"
                     style={{
                       left: `${xPct}%`,
                       top: `${yPct}%`,
-                      transform: 'translate(-50%, -50%)',
                     }}
-                    className={`absolute z-30 flex flex-col items-center group focus:outline-none transition-all duration-300`}
                   >
-                    {/* Circular Icon Node */}
-                    <div
-                      className={`w-11 h-11 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center transition-all duration-300 shadow-md ${
-                        isActive
-                          ? 'shadow-[0_8px_24px_rgba(123,63,199,0.3)] scale-110 ring-2 ring-offset-2'
-                          : 'bg-white hover:bg-[#faf8fd] border border-[#ede7f6]'
-                      }`}
-                      style={{
-                        backgroundColor: isActive ? sat.color : '#ffffff',
-                        color: isActive ? '#ffffff' : sat.color,
-                        ringColor: sat.color,
-                      }}
+                    <motion.button
+                      onClick={() => setActiveNode(idx)}
+                      whileHover={{ scale: 1.12 }}
+                      whileTap={{ scale: 0.95 }}
+                      transition={{ type: 'spring', stiffness: 400, damping: 25 }}
+                      className="flex flex-col items-center group focus:outline-none cursor-pointer"
                     >
-                      <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
-                    </div>
+                      {/* Circular Icon Node */}
+                      <div
+                        className={`w-11 h-11 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center transition-all duration-300 shadow-md ${
+                          isActive
+                            ? 'shadow-[0_8px_24px_rgba(123,63,199,0.3)] ring-2 ring-offset-2'
+                            : 'bg-white hover:bg-[#faf8fd] border border-[#ede7f6]'
+                        }`}
+                        style={{
+                          backgroundColor: isActive ? sat.color : '#ffffff',
+                          color: isActive ? '#ffffff' : sat.color,
+                          ringColor: sat.color,
+                        }}
+                      >
+                        <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
+                      </div>
 
-                    {/* Satellite Text Label */}
-                    <div className="mt-1.5 sm:mt-2 text-center max-w-[90px] sm:max-w-[120px]">
-                      <span className={`text-[10px] sm:text-xs font-bold tracking-tight block leading-tight transition-colors ${
-                        isActive ? 'text-[#1c1636]' : 'text-[#524b6b] group-hover:text-[#1c1636]'
-                      }`}>
-                        {sat.title}
-                      </span>
-                    </div>
-                  </motion.button>
+                      {/* Satellite Text Label */}
+                      <div className="mt-1.5 sm:mt-2 text-center">
+                        {sat.id === 'pop-health' ? (
+                          <div className="flex items-center justify-center gap-3 sm:gap-4 text-[10px] sm:text-xs font-bold tracking-tight whitespace-nowrap">
+                            <span className={`transition-colors ${
+                              isActive ? 'text-[#1c1636]' : 'text-[#524b6b] group-hover:text-[#1c1636]'
+                            }`}>
+                              Population
+                            </span>
+                            <span className={`transition-colors ${
+                              isActive ? 'text-[#1c1636]' : 'text-[#524b6b] group-hover:text-[#1c1636]'
+                            }`}>
+                              Health
+                            </span>
+                          </div>
+                        ) : (
+                          <div className="max-w-[90px] sm:max-w-[120px]">
+                            <span className={`text-[10px] sm:text-xs font-bold tracking-tight block leading-tight transition-colors ${
+                              isActive ? 'text-[#1c1636]' : 'text-[#524b6b] group-hover:text-[#1c1636]'
+                            }`}>
+                              {sat.title}
+                            </span>
+                          </div>
+                        )}
+                      </div>
+                    </motion.button>
+                  </div>
                 );
               })}
             </div>
@@ -264,7 +295,7 @@ export default function SolutionsSection() {
             {/* ─────────────────────────────────────────────────────────
                 HANDWRITTEN ANNOTATION (Matching Master Reference Mockup)
                 ───────────────────────────────────────────────────────── */}
-            <div className="w-full text-right pr-6 mt-2">
+            <div className="w-full text-right pr-4 sm:pr-8 mt-6 sm:mt-10">
               <span className="font-['Caveat',cursive] text-2xl sm:text-3xl text-[#7b3fc7]/85 -rotate-3 inline-block tracking-wide">
                 Connected solutions. Real impact.
               </span>

@@ -28,12 +28,12 @@ const teamConstellation = [
     tagline: 'Bringing clinical insight to real-world solutions.',
     icon: Stethoscope,
     image: '/images/team/Sandeep Bajaj, MD.png',
-    // Top-Left
-    cx: 280,
-    cy: 210,
-    textSide: 'left',
+    // Top-Center
+    cx: 550,
+    cy: 135,
+    textSide: 'right',
     badgePos: 'bottom-right',
-    spokeControl: { x: 390, y: 270 }
+    spokeControl: { x: 550, y: 230 }
   },
   {
     id: 'satya-thottappillil',
@@ -42,12 +42,12 @@ const teamConstellation = [
     tagline: 'Building the infrastructure for connected care.',
     icon: Monitor,
     image: '/images/team/Satya Thottappillil.png',
-    // Top-Center
-    cx: 550,
-    cy: 135,
-    textSide: 'right',
+    // Top-Left
+    cx: 280,
+    cy: 210,
+    textSide: 'left',
     badgePos: 'bottom-right',
-    spokeControl: { x: 550, y: 230 }
+    spokeControl: { x: 390, y: 270 }
   },
   {
     id: 'richard-cairl',
