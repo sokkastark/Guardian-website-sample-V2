@@ -174,8 +174,8 @@ export default function PlatformPage() {
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div className="lg:col-span-5">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-purple-200 text-xs font-semibold tracking-wider uppercase mb-6">
                 <Layers className="w-3.5 h-3.5 text-[#ff7a57]" />
                 <span>GUARDIAN POPULATION HEALTH PLATFORM</span>
@@ -210,9 +210,9 @@ export default function PlatformPage() {
               </div>
             </div>
 
-            {/* Product Proof Layer: Actual Guardian Dashboard UI Application Window */}
-            <div className="lg:col-span-6">
-              <div className="relative rounded-2xl bg-[#1a1233] border border-white/20 shadow-[0_24px_60px_rgba(0,0,0,0.5)] p-2.5 overflow-hidden group">
+            {/* Product Proof Layer: Actual Guardian Dashboard UI Application Window (10% Larger Display) */}
+            <div className="lg:col-span-7">
+              <div className="relative rounded-2xl bg-[#1a1233] border border-white/20 shadow-[0_24px_60px_rgba(0,0,0,0.5)] p-2.5 overflow-hidden group transform lg:scale-105 origin-left sm:origin-center transition-transform duration-300">
                 <div className="flex items-center justify-between px-3 py-2 bg-[#120b24] rounded-t-xl border-b border-white/10 mb-2">
                   <div className="flex items-center gap-2">
                     <span className="w-3 h-3 rounded-full bg-red-500/80 inline-block" />
